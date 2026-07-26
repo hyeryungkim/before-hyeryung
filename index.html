@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyeryung Gallery</title>
+    <style>
+        /* 기본 배경 설정 (아주 깔끔한 갤러리용 흰색 배경) */
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* 갤러리 상단 타이틀 스타일 */
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+        .gallery-header h1 {
+            font-size: 24px;
+            font-weight: 300;
+            color: #222222;
+            letter-spacing: 2px;
+        }
+
+        /* 깃허브 맞춤형: 팝업창 사진 제목/설명 크기 조절 */
+        [class*="Popup__Title"], [class*="info-title"] { 
+            font-size: 14px !important; 
+            font-weight: 300 !important; 
+            color: #4a4949 !important; 
+        }
+        [class*="Popup__Description"], [class*="info-description"] { 
+            font-size: 12px !important; 
+            color: #4a4949 !important; 
+        }
+
+        /* [핵심해결] 클릭 시 확대 사진이 모니터 화면 세로 65% 안에 무조건 쏙 들어오게 제한 (스크롤 완전 방지) */
+        [class*="Popup__Container"] img,
+        [class*="Lightbox__Container"] img,
+        .elfsight-photo-gallery-popup-image {
+            max-width: 85vw !important;
+            max-height: 65vh !important; /* 모니터 한 화면에 다 보이게 강제 제한 */
+            object-fit: contain !important;
+            width: auto !important;
+            height: auto !important;
+            margin: auto !important;
+        }
+        
+        /* 팝업 열렸을 때 뒷배경 완벽한 블랙 */
+        [class*="Popup__Container"], [class*="Lightbox__Container"] { 
+            background-color: #000000 !important; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 상단 타이틀 영역 (원하시는 문구로 수정 가능) -->
+    <div class="gallery-header">
+        <h1>HYERYUNG GALLERY</h1>
+    </div>
+
+    <!-- Elfsight 포토 갤러리 위젯 실행 영역 -->
+    <script src="https://elfsightcdn.com" async></script>
+    <div class="elfsight-app-0777010c-cd5d-4028-ba2d-644e80b43921" data-elfsight-app-lazy></div>
+
+</body>
+</html>
