@@ -86,6 +86,51 @@ const galleryData = [
         src: 'images/017.jpg',
         title: 'AZIT _ Tranquil shadow 6 (Detail)',
         desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+    },
+    {
+        src: 'images/018.jpg',
+        title: 'AZIT _ Tranquil shadow 2 (Detail)',
+        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+    },
+    {
+        src: 'images/019.jpg',
+        title: 'AZIT _ Tranquil shadow 3',
+        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+    },
+    {
+        src: 'images/020.jpg',
+        title: 'AZIT _ Tranquil shadow 3 (Detail)',
+        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+    },
+    {
+        src: 'images/021.jpg',
+        title: 'AZIT _ Tranquil shadow 4',
+        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+    },
+    {
+        src: 'images/022.jpg',
+        title: 'AZIT _ Tranquil shadow 4 (Detail)',
+        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+    },
+    {
+        src: 'images/023.jpg',
+        title: 'AZIT _ Tranquil shadow 5',
+        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+    },
+    {
+        src: 'images/024.jpg',
+        title: 'AZIT _ Tranquil shadow 5 (Detail)',
+        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+    },
+    {
+        src: 'images/025.jpg',
+        title: 'AZIT _ Tranquil shadow 6',
+        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+    },
+    {
+        src: 'images/026.jpg',
+        title: 'AZIT _ Tranquil shadow 6 (Detail)',
+        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
     }
 ];
 
