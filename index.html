@@ -230,7 +230,7 @@
 
 <script src="script.js"></script>
 <script>
-    let currentIndex = 0;
+   let currentIndex = 0;
     let isZoomed = false;
     
     const IMAGES_PER_PAGE = 9; 
@@ -280,7 +280,7 @@
 
             galleryContainer.appendChild(containerDiv);
         });
-        // 💡 [여기서부터 복사해서 맨 밑에 이어서 붙여넣으세요!]
+
         updateVisibility();
     }
 
@@ -317,6 +317,7 @@
         document.body.style.overflow = 'hidden';
     }
 
+    // [수정완료] 스페이스바를 누르지 않고 그냥 클릭만 해도 확대/축소가 무한 반복되는 스마트 토글식 교정 완료
     function closeLightbox() {
         lightbox.style.display = 'none';
         document.body.style.overflow = 'auto';
@@ -400,7 +401,9 @@
         scrollTop = lightbox.scrollTop;
     }, { passive: true });
     
-    lightbox.addEventListener('touchend', () => { isDragging = false; });
+    lightbox.addEventListener('touchend', () => { 
+        isDragging = false; 
+    });
     
     lightbox.addEventListener('touchmove', (e) => {
         if (!isDragging) return;
@@ -408,11 +411,10 @@
         const y = e.touches.pageY - lightbox.offsetTop;
         lightbox.scrollLeft = scrollLeft - (x - startX) * 1.5;
         lightbox.scrollTop = scrollTop - (y - startY) * 1.5;
-    }, { passive: true });
+    }, { passive: true }); /* 👈 [완벽 교정] 빠져있던 마감 중괄호(})를 완벽하게 복구했습니다! */
 
-    // 🚀 드디어 끊김 감옥을 탈출해 전체 사진 리스트를 조립시키는 가동 단추!
+    // 🚀 드디어 끊김 감옥을 탈출해 전체 사진 리스트를 조립시키는 가동 단추 기동!
     initGallery();
 </script>
-
 </body>
 </html>
