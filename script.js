@@ -24,28 +24,28 @@ const galleryData = [
     },
     {
         src: 'images/005.jpg',
-        title: 'AZIT _ Deep Deep Deep 5',
-        desc: '25 x 25 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'ROOM by ROOM _ W3',
+        desc: 'H7 Φ10cm\nPorcelain, wheel throwing, reduction firing 1250℃'
     },
     {
         src: 'images/006.jpg',
-        title: 'AZIT _ Tranquil shadow 1',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'ROOM by ROOM _ W1,2',
+        desc: 'Each: H7 Φ10cm\nPorcelain, wheel throwing, reduction firing 1250℃'
     },
     {
         src: 'images/007.jpg',
-        title: 'AZIT _ Tranquil shadow 1 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'Structural Bonding _ pipeline',
+        desc: 'H9.5 Φ5.5cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/008.jpg',
-        title: 'AZIT _ Tranquil shadow 2',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'Structural Bonding _ pipeline',
+        desc: ' - cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/009.jpg',
-        title: 'AZIT _ Tranquil shadow 2 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'In Sunlight or in Shadow _ B17',
+        desc: 'Each: H8 x 20 x 20cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/010.jpg',
@@ -69,8 +69,8 @@ const galleryData = [
     },
     {
         src: 'images/014.jpg',
-        title: 'AZIT _ Tranquil shadow 5',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'ROOM by ROOM _ B5',
+        desc: 'Each: H4.2 Φ9.5cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/015.jpg',
@@ -79,13 +79,13 @@ const galleryData = [
     },
     {
         src: 'images/016.jpg',
-        title: 'AZIT _ Tranquil shadow 6',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'ROOM by ROOM _ V8,9',
+        desc: 'H4 Φ8cm, 8 x 17.2 x 8cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/017.jpg',
-        title: 'AZIT _ Tranquil shadow 6 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'ROOM by ROOM _ KY2',
+        desc: ' H8 Φ13cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/018.jpg',
