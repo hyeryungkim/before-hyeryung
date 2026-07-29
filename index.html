@@ -166,11 +166,10 @@ html, body {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  border: 1px solid rgba(255,255,255,0.4) !important;
-  border-radius: 50% !important;
+  border: none !important;
   line-height: 1 !important;
 }
-.toolbar-btn.close-btn { font-size: 30px !important; border: none !important; }
+.toolbar-btn.close-btn { font-size: 30px !important; }
 .toolbar-btn:hover { opacity: 1 !important; }
 .toolbar-btn.disabled { opacity: 0.2 !important; cursor: default !important; pointer-events: none !important; }
 
@@ -236,9 +235,13 @@ const MIN_ZOOM = 1;         // 최소 100%
 const MAX_ZOOM = 3;         // 최대 300%
 const ZOOM_STEP = 0.5;      // 버튼 한 번에 50%씩
 
-// ── 마우스 드래그 이동 설정 ──
+// ── 이동(팬) 설정 : 스크롤 대신 translate로 직접 이동시켜서 4방향 모두 자유롭게 이동 ──
+let panX = 0;
+let panY = 0;
+
+// ── 마우스/터치 드래그 공통 설정 ──
 let isDragging = false;
-let startX, startY, scrollLeft, scrollTop;
+let startX, startY, startPanX, startPanY;
 
 const IMAGES_PER_PAGE = 9;
 let visibleCount = IMAGES_PER_PAGE;
@@ -330,10 +333,22 @@ function changeImage(direction, event) {
 }
 
 // ── 확대 / 축소 버튼 로직 ──
+function applyTransform() {
+  wrapper.style.transform = `translate(${panX}px, ${panY}px) scale(${zoomLevel})`;
+}
+
+// 확대된 배율만큼 이동할 수 있는 최대 범위로 panX/panY를 제한 (사진이 화면 밖으로 완전히 사라지지 않도록)
+function clampPan() {
+  const maxPanX = (wrapper.offsetWidth * (zoomLevel - 1)) / 2;
+  const maxPanY = (wrapper.offsetHeight * (zoomLevel - 1)) / 2;
+  panX = Math.max(-maxPanX, Math.min(maxPanX, panX));
+  panY = Math.max(-maxPanY, Math.min(maxPanY, panY));
+}
+
 function applyZoom() {
-  wrapper.style.transform = `scale(${zoomLevel})`;
+  clampPan();
+  applyTransform();
   isZoomed = zoomLevel > MIN_ZOOM;
-  lightbox.style.overflow = isZoomed ? 'auto' : 'hidden';
   lightboxImg.style.cursor = isZoomed ? 'grab' : 'default';
 
   zoomOutBtn.classList.toggle('disabled', zoomLevel <= MIN_ZOOM);
@@ -354,8 +369,8 @@ function zoomOut(event) {
 
 function resetZoom() {
   zoomLevel = MIN_ZOOM;
-  lightbox.scrollLeft = 0;
-  lightbox.scrollTop = 0;
+  panX = 0;
+  panY = 0;
   applyZoom();
 }
 
@@ -376,50 +391,58 @@ lightbox.addEventListener('click', function(e) {
   }
 });
 
-// ── 마우스 드래그로 확대된 사진 이동 (데스크탑) ──
+// ── 마우스 드래그로 확대된 사진 이동 (데스크탑) : translate 방식이라 상하좌우 모두 자유롭게 이동 ──
 wrapper.addEventListener('mousedown', (e) => {
   if (!isZoomed) return;
   isDragging = true;
-  startX = e.pageX - lightbox.offsetLeft;
-  startY = e.pageY - lightbox.offsetTop;
-  scrollLeft = lightbox.scrollLeft;
-  scrollTop = lightbox.scrollTop;
+  startX = e.pageX;
+  startY = e.pageY;
+  startPanX = panX;
+  startPanY = panY;
+  wrapper.style.transition = 'none'; // 드래그 중엔 애니메이션 지연 없이 즉각 반응
   lightboxImg.style.cursor = 'grabbing';
   e.preventDefault();
 });
 
 window.addEventListener('mouseup', () => {
+  if (!isDragging) return;
   isDragging = false;
+  wrapper.style.transition = 'transform 0.2s ease-in-out';
   if (isZoomed) lightboxImg.style.cursor = 'grab';
 });
 
 window.addEventListener('mousemove', (e) => {
   if (!isDragging) return;
   e.preventDefault();
-  const x = e.pageX - lightbox.offsetLeft;
-  const y = e.pageY - lightbox.offsetTop;
-  lightbox.scrollLeft = scrollLeft - (x - startX);
-  lightbox.scrollTop = scrollTop - (y - startY);
+  panX = startPanX + (e.pageX - startX);
+  panY = startPanY + (e.pageY - startY);
+  clampPan();
+  applyTransform();
 });
 
-// ── 모바일 터치 드래그 이동 시스템 (기존 유지) ──
-lightbox.addEventListener('touchstart', (e) => {
+// ── 모바일 터치 드래그 이동 시스템 (translate 방식) ──
+wrapper.addEventListener('touchstart', (e) => {
   if (!isZoomed) return;
   isDragging = true;
-  startX = e.touches[0].pageX - lightbox.offsetLeft;
-  startY = e.touches[0].pageY - lightbox.offsetTop;
-  scrollLeft = lightbox.scrollLeft;
-  scrollTop = lightbox.scrollTop;
+  startX = e.touches[0].pageX;
+  startY = e.touches[0].pageY;
+  startPanX = panX;
+  startPanY = panY;
+  wrapper.style.transition = 'none';
 }, { passive: true });
 
-lightbox.addEventListener('touchend', () => { isDragging = false; });
-
-lightbox.addEventListener('touchmove', (e) => {
+window.addEventListener('touchend', () => {
   if (!isDragging) return;
-  const x = e.touches[0].pageX - lightbox.offsetLeft;
-  const y = e.touches[0].pageY - lightbox.offsetTop;
-  lightbox.scrollLeft = scrollLeft - (x - startX) * 1.5;
-  lightbox.scrollTop = scrollTop - (y - startY) * 1.5;
+  isDragging = false;
+  wrapper.style.transition = 'transform 0.2s ease-in-out';
+});
+
+window.addEventListener('touchmove', (e) => {
+  if (!isDragging) return;
+  panX = startPanX + (e.touches[0].pageX - startX);
+  panY = startPanY + (e.touches[0].pageY - startY);
+  clampPan();
+  applyTransform();
 }, { passive: true });
 
 // 시스템 가동 및 초기화
