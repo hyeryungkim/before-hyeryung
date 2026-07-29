@@ -54,18 +54,18 @@ const galleryData = [
     },
     {
         src: 'images/011.jpg',
-        title: 'AZIT _ Tranquil shadow 3 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'ROOM by ROOM _ G23',
+        desc: 'Each: H12 Φ15cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/012.jpg',
-        title: 'AZIT _ Tranquil shadow 4',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'Tranquil Container _ B0',
+        desc: 'H9 Φ10cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/013.jpg',
-        title: 'AZIT _ Tranquil shadow 4 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'True Color',
+        desc: 'Each: H10 Φ12cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/014.jpg',
@@ -74,8 +74,8 @@ const galleryData = [
     },
     {
         src: 'images/015.jpg',
-        title: 'AZIT _ Tranquil shadow 5 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'ROOM by ROOM _ LL1',
+        desc: 'Each: H13 Φ13cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/016.jpg',
@@ -89,48 +89,48 @@ const galleryData = [
     },
     {
         src: 'images/018.jpg',
-        title: 'AZIT _ Tranquil shadow 2 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'Texure Container (black, white, blue)',
+        desc: 'Each: H10 Φ10cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/019.jpg',
-        title: 'AZIT _ Tranquil shadow 3',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'Gold dot Container',
+        desc: 'H5 Φ10cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/020.jpg',
-        title: 'AZIT _ Tranquil shadow 3 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'Traquil container  ( handle series )',
+        desc: 'H20 Φ10cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/021.jpg',
-        title: 'AZIT _ Tranquil shadow 4',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'Texure Container',
+        desc: 'H9 Φ10m, H3 Φ10cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/022.jpg',
-        title: 'AZIT _ Tranquil shadow 4 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'Rhythm Bowl (yellow)',
+        desc: '45 x 45 x 20cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/023.jpg',
-        title: 'AZIT _ Tranquil shadow 5',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'Rhythm Bowl (Black, White)',
+        desc: 'Each: H13 Φ15cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/024.jpg',
-        title: 'AZIT _ Tranquil shadow 5 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'ROOM by ROOM _ KY0',
+        desc: 'H8 Φ13cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/025.jpg',
-        title: 'AZIT _ Tranquil shadow 6',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'Pebble Desk Set',
+        desc: 'Pencil Vase: H9 Φ8cm,  Clock: H4 Φ10cm,  Clip Container: H2.5 Φ8.5cm,  Pot: H3 Φ4cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/026.jpg',
-        title: 'AZIT _ Tranquil shadow 6 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
+        title: 'TRANQUIL CONTAINER',
+        desc: 'Each: H16 Φ15cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     }
 ];
 
