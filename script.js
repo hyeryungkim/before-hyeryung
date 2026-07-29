@@ -4,133 +4,133 @@
 const galleryData = [
     {
         src: 'images/001.jpg',
-        title: 'AZIT _ Deep Deep Deep 1',
-        desc: '25 x 25 cm\nPorcelain, mixed media on wood panel'
+        title: 'ROOM by ROOM _ B13-1',
+        desc: 'H15 Φ11cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/002.jpg',
-        title: 'AZIT _ Deep Deep Deep 2',
-        desc: '25 x 25 cm\nPorcelain, mixed media on wood panel'
+        title: 'ROOM by ROOM _ B13-2',
+        desc: 'H15 Φ11cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/003.jpg',
-        title: 'AZIT _ Deep Deep Deep 3',
-        desc: '25 x 25 cm\nPorcelain, mixed media on wood panel'
+        title: 'ROOM by ROOM _ B13-3',
+        desc: 'H15 Φ11cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/004.jpg',
-        title: 'AZIT _ Deep Deep Deep 4',
-        desc: '25 x 25 cm\nPorcelain, mixed media on wood panel'
+        title: 'ROOM by ROOM _ G11',
+        desc: 'Each: H10 Φ12cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/005.jpg',
         title: 'AZIT _ Deep Deep Deep 5',
-        desc: '25 x 25 cm\nPorcelain, mixed media on wood panel'
+        desc: '25 x 25 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/006.jpg',
         title: 'AZIT _ Tranquil shadow 1',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/007.jpg',
         title: 'AZIT _ Tranquil shadow 1 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/008.jpg',
         title: 'AZIT _ Tranquil shadow 2',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/009.jpg',
         title: 'AZIT _ Tranquil shadow 2 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/010.jpg',
         title: 'AZIT _ Tranquil shadow 3',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/011.jpg',
         title: 'AZIT _ Tranquil shadow 3 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/012.jpg',
         title: 'AZIT _ Tranquil shadow 4',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/013.jpg',
         title: 'AZIT _ Tranquil shadow 4 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/014.jpg',
         title: 'AZIT _ Tranquil shadow 5',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/015.jpg',
         title: 'AZIT _ Tranquil shadow 5 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/016.jpg',
         title: 'AZIT _ Tranquil shadow 6',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/017.jpg',
         title: 'AZIT _ Tranquil shadow 6 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/018.jpg',
         title: 'AZIT _ Tranquil shadow 2 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/019.jpg',
         title: 'AZIT _ Tranquil shadow 3',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/020.jpg',
         title: 'AZIT _ Tranquil shadow 3 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/021.jpg',
         title: 'AZIT _ Tranquil shadow 4',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/022.jpg',
         title: 'AZIT _ Tranquil shadow 4 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/023.jpg',
         title: 'AZIT _ Tranquil shadow 5',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/024.jpg',
         title: 'AZIT _ Tranquil shadow 5 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/025.jpg',
         title: 'AZIT _ Tranquil shadow 6',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     },
     {
         src: 'images/026.jpg',
         title: 'AZIT _ Tranquil shadow 6 (Detail)',
-        desc: '31.8 x 31.8 cm\nPorcelain, mixed media on wood panel'
+        desc: '31.8 x 31.8 cm\nPorcelain, wheel throwing, oxidation firing 1250℃'
     }
 ];
 
