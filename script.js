@@ -129,7 +129,7 @@ const galleryData = [
     },
     {
         src: 'images/026.jpg',
-        title: 'TRANQUIL CONTAINER',
+        title: 'Tranquil Container',
         desc: 'Variable dimensions\nPorcelain, wheel throwing, oxidation firing 1250℃'
     }
 ];
